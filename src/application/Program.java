@@ -26,7 +26,7 @@ public class Program {
 			
 			String line = br.readLine();
 			while (line != null) {
-				
+			
 				String[] fields = line.split(" ");
 				String username = fields[0];
 				Date moment = Date.from(Instant.parse(fields[1]));
@@ -34,7 +34,7 @@ public class Program {
 				set.add(new LogEntry(username, moment));
 				
 				line = br.readLine();
-			}
+			}	
 			System.out.println("Total users: " + set.size());
 
 		} catch (IOException e) {
